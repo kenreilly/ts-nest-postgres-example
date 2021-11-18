@@ -1,0 +1,79 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 100;
+}
+
+body { 
+	background: black;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 1fr 16fr;
+	
+}
+
+header {
+	grid-column: 1 / 5;
+	line-height: calc(100vh / 16);
+	font-weight: 100;
+	margin-left: 2vw;
+	font-size: 1.4em;
+}
+
+main, aside {
+	grid-row: 2 / 2;
+	border-top: 1px solid #0020c0;
+	border-right: 1px solid #0020c0;
+}
+
+main {
+	grid-column: 2 / 2;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+aside {
+	grid-column: 1 / 2;
+	display: flex;
+	flex-flow: column;
+}
+
+aside > input, aside > button {
+	flex: .025;
+	margin-top: 1vh;
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+
+main > div, aside > div {
+	border-bottom: 2px solid #303030;
+}
+
+main > div > span, aside > div {
+	font-size: 1.2em;
+	font-style: italic;
+	color: #a0d0a0;
+}
+
+main > div, main > output > div, aside > div {
+	display: flex;
+	padding-left: 1vw;
+	padding: 1vh 0 0 1vw;
+}
+
+main > div > span, output > div > span {
+	flex: 1;
+}
+
+main > output > div {
+
+	border-bottom: 1px solid grey;
+}
+
+input, button {
+	background: #202020;
+	color: white;
+
+}
